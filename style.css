@@ -1,0 +1,36 @@
+/* CSS Document */
+
+body(
+
+background-color:#f53d21;
+
+)
+
+.userselections {
+
+  background-color: aqua;
+  width: 50vw;
+  height: 2rem;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin
+}
+
+.userselections button {
+
+
+  border: 2px solid black;
+
+
+  float: left;
+  cursor: pointer;
+}
+
+.userselections button:hover {
+
+  color: white;
+  background-color: slategray;
+}
+
+
+}
