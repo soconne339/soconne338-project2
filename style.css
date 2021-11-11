@@ -1,24 +1,90 @@
 /* CSS Document */
 
+html{
+  padding:0px;
+  margin: 0px
+}
+
+body{
+
+  background-color: white;
+}
+
+.container{
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #215c61;
+  width: 80vw;
+  height: auto;
+  color:white;
+
+}
+
+.wrapper{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+}
+.intro{
+  margin: 0 auto;
+  text-align: center;
+  width: 30vw;
+}
+
+
+
+.scoreboard{
+
+  margin: 0 auto;
+  
+  width: 30vw;
+  margin-bottom: 50px;
+  font-size: 20px;
+  display: flex;
+}
+
+.userscore, .computerscore{
+
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: #cfbfbf;
+  color: darkblue;
+  box-shadow: 0cm;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.winner{
+
+  border: 5px solid red;
+  width: auto;
+  font-size: 5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 
 
 .userselections {
 
-  background-color: aqua;
-  width: 50vw;
+  
+  width: 40vw;
   height: 2rem;
   padding: 5px;
-  margin-bottom: 20px;
-  margin
+  margin: 9 auto;
+  
+  display: inline-flex;
 }
 
 .userselections button {
 
-
+  width: 150px;
+  height: 50px;
   border: 2px solid black;
-
-
-  float: left;
   cursor: pointer;
 }
 
@@ -29,4 +95,24 @@
 }
 
 
+
+.selections{
+
+  display: flex;
+  margin: 0 auto;
+  width: 30vw;
 }
+
+.game-selection{
+
+  
+  margin: 50px;
+  width: 100px;
+  font-size: 20px;
+
+  
+
+
+}
+
+

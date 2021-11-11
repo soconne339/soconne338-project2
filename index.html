@@ -10,9 +10,12 @@
 
 <body>
     <section class="container">
+      <div class="wrapper">
     
+    <div class="intro">
     <h1>Let's Play</h1>
     <h2>Paper Rock and Scissors</h2>
+    </div>
     
     <div class="scoreboard">
   <div class="userscore">user<span id="userS">
@@ -30,18 +33,19 @@
   <button id='clear'>Clear</button>
 </div>
 <br>
+<div class="selections">
 <div class="game-selection">
   <p> User has Chosen</p>
-</div>
-<div class="game-selection">
   <span id="user_choice">....</span>
 </div>
-<div>
+
+<div class="game-selection"> 
   <p>
     Computer has Chosen
   </p>
 
   <span id="computer_choice">…………</span>
+</div>
 </div>
 
     <div class="winner">
@@ -50,7 +54,10 @@
   
 </div>
         
+      </div>
 </section>    
+
+
 
 <script src="app.js"></script>    
 </body>
