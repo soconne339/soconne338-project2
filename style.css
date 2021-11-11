@@ -39,16 +39,18 @@ body{
 
   margin: 0 auto;
   
-  width: 30vw;
-  margin-bottom: 50px;
-  font-size: 20px;
+  width: 35vw;
+  margin-bottom: 5rem;
+  
   display: flex;
 }
 
 .userscore, .computerscore{
 
   border: 2px solid black;
-  padding: 10px;
+  width: 20%;
+  height: auto;
+  padding: 2%;
   text-align: center;
   background-color: #cfbfbf;
   color: darkblue;
@@ -74,7 +76,7 @@ body{
   
   width: 40vw;
   height: 2rem;
-  padding: 5px;
+  padding: 2%;
   margin: 9 auto;
   
   display: inline-flex;
@@ -82,10 +84,11 @@ body{
 
 .userselections button {
 
-  width: 150px;
-  height: 50px;
+  width: 8rem;
+  height: 4rem;
   border: 2px solid black;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .userselections button:hover {
