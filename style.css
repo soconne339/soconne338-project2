@@ -98,6 +98,13 @@ body{
   background-color: slategray;
 }
 
+@media (max-width:600px){
+
+  .userselections button img{
+
+    width: 30px;
+  }
+}
 
 
 .selections{
