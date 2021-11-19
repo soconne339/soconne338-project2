@@ -6,6 +6,17 @@ let scissors = document.getElementById("scissors");
 
 let clear = document.querySelector("#clear");
 
+
+function startTheGame(){
+
+document.getElementsByClassName('wrapper')[0].classList.add("showgame");
+document.getElementById("startgame").classList.add("hidegame");
+
+
+
+}
+
+
 clear.addEventListener("click", () => {
   document.querySelector("#compS").innerText = 0;
 
