@@ -11,7 +11,7 @@ function startTheGame(){
 
 document.getElementsByClassName('wrapper')[0].classList.add("showgame");
 document.getElementById("startgame").classList.add("hidegame");
-
+document.getElementById("icons").classList.add("hidegame");
 
 
 }

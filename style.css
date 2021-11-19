@@ -21,24 +21,25 @@ body{
 .startbutton{
 
   padding: 10px;
-  width: 10vw;
+  width: 50vw;
   background-color: slategray;
   color: white;
-  position: relative;
-  left: 40vw;
-  top: 20vh;
+  
+  margin-left: 20%;
+  
   cursor: pointer;
 
 }
 
-@media (max-width: 600px){
+.starting_images img{
 
-  .startbutton{
-
-    width: 100px;
-    padding: 5%;
-  }
+  position: relative;
+  left: 40%;
+  width: 3rem;
+  
 }
+
+
 
 .hidegame{
 
@@ -50,6 +51,7 @@ body{
   visibility: visible;
   
 }
+
 
 
 .wrapper{
