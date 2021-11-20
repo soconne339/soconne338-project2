@@ -94,7 +94,7 @@ scissors.addEventListener("click", onclickHandler);
 function whoWins(userAnswer, computer_choice) {
   const win = winnerAnnouncement();
 
-  if ((userAnswer === "Rock") & (computer_choice == "Rock")) {
+  if ((userAnswer === "Rock") && (computer_choice === "Rock")) {
     win.innerHTML = "";
     win.append("Draw!");
   } else if (userAnswer === "Rock") {
@@ -109,7 +109,7 @@ function whoWins(userAnswer, computer_choice) {
     }
   }
 
-  if ((userAnswer === "Paper") & (computer_choice === "Paper")) {
+  if ((userAnswer === "Paper") && (computer_choice === "Paper")) {
     win.innerHTML = "";
     win.append("Draw!");
     updateComputerScore();
@@ -125,7 +125,7 @@ function whoWins(userAnswer, computer_choice) {
     }
   }
 
-  if ((userAnswer === "Scissors") & (computer_choice === "Scissors")) {
+  if ((userAnswer === "Scissors") && (computer_choice === "Scissors")) {
     win.innerHTML = "";
     win.append("Draw!");
   } else if (userAnswer === "Scissors") {
