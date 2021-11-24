@@ -17,6 +17,8 @@ clear.addEventListener("click", () => {
 
   document.querySelector("#userS").innerText = 0;
   win.innerHTML = "";
+  document.getElementById("user_choice").textContent = "";
+  document.getElementById("computer_choice").textContent = "";
 });
 
 function winnerAnnouncement() {
