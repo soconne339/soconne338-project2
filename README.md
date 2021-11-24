@@ -66,6 +66,25 @@ This website has passed the following validations:
 - Jigsaw CSS Validation - [https://www.jslint.com/](https://www.jslint.com/)
 - Javascript JSLint Validation - [https://www.jslint.com/](https://www.jslint.com/)
 
+## Issues/Bugs
+
+### Issue 1
+None of the buttons worked on the browser but in JSFiddle it was working without any problem. 
+- This was resolved by placing the script tag at the end of the HTML file. The DOM needs to loads first before the javascript kicks in.
+
+### Issue 2
+An issue was found whereby clicking on the buttons sometimes didn’t activate the event handler
+- The issue was resolved by adding data-id and using this as the target. Clicking on images now works all the time.
+
+### Issue 3
+Issue with the start button not disappearing
+- Issue resolved by creating a new class with CSS property visibility:hidden and adding this class to the button
+
+### Issue 4
+Issue with not being able to center the image beside start button
+- Issue resolved by adding position: relative 
+
+
 
 
 
