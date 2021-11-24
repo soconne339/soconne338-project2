@@ -85,6 +85,26 @@ Issue with not being able to center the image beside start button
 - Issue resolved by adding position: relative 
 
 
+## Deployment
+
+This website was published using GitHub Pages. The procedure is outlined below:
+- Navigate to settings on the GitHub Page
+- Create new respository
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+
+## Credits
+
+A lot of help for the javascript for this project was thanks to [Dev Ed Youtube Channel](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q). Particularly to his video on creating a Rock Paper Scissors [YouTube Video](https://www.youtube.com/watch?v=qWPtKtYEsN4&t=2331s). Please note that none of the code was taken from this video
+
+Thanks to my mentor Guido for helping me debug a large Javascript problem
+
+Thanks to Matt Bodden_5P for troubleshooting my issue on Slack
+
+Thanks to my friends and family who beta tested this application and gave some pointers.
+
+
 
 
 
