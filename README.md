@@ -66,6 +66,12 @@ This website has passed the following validations:
 - Jigsaw CSS Validation - [https://www.jslint.com/](https://www.jslint.com/)
 - Javascript JSLint Validation - [https://www.jslint.com/](https://www.jslint.com/)
 
+## User Stories
+
+1. The game seemed straightforward on how to play. Perhaps the scoreboard should stop when it gets to 10 - Female age 53
+2. I like that each of the pictures is big and easy to tap - Male age 5
+3. I figured out that clicking on the scissors icon again and again allows me to win - Female age 38
+
 ## Issues/Bugs
 
 ### Issue 1
@@ -92,6 +98,7 @@ This website was published using GitHub Pages. The procedure is outlined below:
 - Create new respository
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
 
 
 ## Credits
