@@ -16,6 +16,7 @@ clear.addEventListener("click", () => {
   document.querySelector("#compS").innerText = 0;
 
   document.querySelector("#userS").innerText = 0;
+  win.innerHTML = "";
 });
 
 function winnerAnnouncement() {
