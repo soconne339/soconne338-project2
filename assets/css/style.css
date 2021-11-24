@@ -27,9 +27,17 @@ body{
   
   margin-left: 20%;
   
-  cursor: pointer;
+  
 
 }
+
+.startbutton:hover{
+
+  cursor: pointer;
+  background-color: #49525c;
+
+}
+
 
 .starting_images img{
 
