@@ -32,3 +32,36 @@ The last section shows the choices made by the user and by the computer. I've ma
 To reset the scoreboard and start the game again the user needs to click on the clear button to the right of the game button choices. The button is designed like the other buttons but the text clear is displayed and is obvious what the user needs to do. 
 
 ![screenshot of clear button on main screen](./assets/images/clear.png)
+
+## Wireframes
+
+Here are the wireframes for this website
+
+[starting screen](./assets/images/wireframe-initial-page.pdf)
+
+[main screen](./assets/images/wireframe-main-game.pdf)
+
+
+
+## The Ideal Client for This Website 
+
+1. English Speaking
+2. Someone who is in the age group of 20-30
+3. Someone who is looking to kill a bit of time
+4. Someone who is bored and looking for something to do online
+
+## Skeleton
+
+This website is a Single page website made up of two parts. All of the content is hidden before pressing the button. The tools to play the game are distinctly labelled. All of the necessary information is set out on this page. There is no need to go to any other pages on the site.
+
+## Validation
+
+This website has passed the following validations:
+
+- W3C Validation — [https://validator.w3.org/](https://validator.w3.org/)
+- Jigsaw CSS Validation - [https://www.jslint.com/](https://www.jslint.com/)
+- Javascript JSLint Validation - [https://www.jslint.com/](https://www.jslint.com/)
+
+
+
+
