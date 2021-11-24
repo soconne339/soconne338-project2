@@ -5,6 +5,10 @@ The game was built upon the schoolyard game of Rock, Paper, Scissors enjoyed by 
 
 Because the game is based on the random choice of the computer then the game is based solely on luck.
 
+Why not have a go to see if you can beat the computer [Live Deployment](https://soconne339.github.io/soconne338-project2/)
+
+
+
 ## Responsive Design
 
 The game works on all platforms and is fully responsive. 
