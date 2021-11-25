@@ -111,6 +111,30 @@ Thanks to Matt Bodden_5P for troubleshooting my issue on Slack
 
 Thanks to my friends and family who beta tested this application and gave some pointers.
 
+## Technologies Used
+
+- [JS Fiddle](https://www.jsfiddle.net):
+
+Initial code was drafted in JS Fiddle 
+
+- Visual Studio Code Desktop:
+
+Visual Studio Code was where I did most of the work on this project. 
+
+- GitPod:
+
+The code was uploaded to GitPod to make some final adjustments before I was fully happy with it.
+
+- Apple iMac:
+
+This was the computer that I used for this project.
+
+
+
+
+
+
+
 
 
 
