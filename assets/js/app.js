@@ -1,10 +1,17 @@
 // JavaScript Document]
 
-let rock = document.getElementById("rock");
-let paper = document.getElementById("paper");
-let scissors = document.getElementById("scissors");
-
-let clear = document.querySelector("#clear");
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+const clear = document.querySelector("#clear");
+const computerScore = document.querySelector("#compS");
+const userScore = document.querySelector("#userS");
+const userChoice = document.getElementById("user_choice");
+const computerChoice = document.getElementById("computer_choice");
+const win = document.querySelector("#win");
+const ROCK = "Rock";
+const PAPER = "Paper";
+const SCISSORS = "Scissors";
 
 function startTheGame() {
   document.getElementsByClassName("wrapper")[0].classList.add("showgame");
@@ -13,74 +20,59 @@ function startTheGame() {
 }
 
 clear.addEventListener("click", () => {
-  document.querySelector("#compS").innerText = 0;
+  computerScore.innerText = 0;
 
-  document.querySelector("#userS").innerText = 0;
+  userScore.innerText = 0;
   win.innerHTML = "";
-  document.getElementById("user_choice").textContent = "....";
-  document.getElementById("computer_choice").textContent = "....";
+  userChoice.textContent = "....";
+  computerChoice.textContent = "....";
 });
 
-function winnerAnnouncement() {
-  let winner = document.querySelector("#win");
-
-  return winner;
-}
-
 function updateComputerScore() {
-  let compscore = document.querySelector("#compS").textContent;
+  let compscore = computerScore.textContent;
 
   let compscoreInt = parseInt(compscore);
 
   compscoreInt++;
 
-  document.querySelector("#compS").innerText = compscoreInt;
+  computerScore.innerText = compscoreInt;
 
   return compscoreInt;
 }
 
 function updateUserScore() {
-  let userscore = document.querySelector("#userS").textContent;
-
+  const userscore = userScore.textContent;
   let userscoreInt = parseInt(userscore);
 
   userscoreInt++;
 
-  document.querySelector("#userS").innerText = userscoreInt;
+  userScore.innerText = userscoreInt;
 
   return userscoreInt;
 }
 
 function randomInt(max) {
-  let rndchoice = Math.random() * max;
+  const rndchoice = Math.random() * max;
 
   return Math.floor(rndchoice);
 }
 
 function computerSelection() {
-  let choices = ["Rock", "Paper", "Scissors"];
+  const choices = [ROCK, PAPER, SCISSORS];
 
-  let rndChoice = randomInt(choices.length);
+  const rndChoice = randomInt(choices.length);
 
-  let computerChoice = choices[rndChoice];
-
-  return computerChoice;
+  return choices[rndChoice];
 }
 
 const onclickHandler = (e) => {
-  let userAnswer = e.currentTarget.dataset.id;
+  const userAnswer = e.currentTarget.dataset.id;
+  userChoice.innerHTML = userAnswer;
 
-  document.getElementById("user_choice").innerHTML = "";
+  const computerSel = computerSelection();
+  computerChoice.innerHTML = computerSel;
 
-  document.getElementById("computer_choice").innerHTML = "";
-
-  document.getElementById("user_choice").append(userAnswer);
-
-  let computer_choice = computerSelection();
-
-  document.getElementById("computer_choice").append(computer_choice);
-
-  whoWins(userAnswer, computer_choice);
+  whoWins(userAnswer, computerSel);
 
   return userAnswer;
 };
@@ -90,50 +82,39 @@ paper.addEventListener("click", onclickHandler);
 scissors.addEventListener("click", onclickHandler);
 
 function whoWins(userAnswer, computer_choice) {
-  const win = winnerAnnouncement();
-
-  if (userAnswer === "Rock" && computer_choice === "Rock") {
-    win.innerHTML = "";
-    win.append("Draw!");
-  } else if (userAnswer === "Rock") {
-    if (computer_choice === "Scissors") {
-      win.innerHTML = "";
-      win.append("User Wins!");
+  if (userAnswer === ROCK && computer_choice === ROCK) {
+    win.innerHTML = "Draw!";
+  } else if (userAnswer === ROCK) {
+    if (computer_choice === SCISSORS) {
+      win.innerHTML = "User Wins!";
       updateUserScore();
     } else {
-      win.innerHTML = "";
-      win.append("Computer Wins!");
+      win.innerHTML = "Computer Wins!";
       updateComputerScore();
     }
   }
 
-  if (userAnswer === "Paper" && computer_choice === "Paper") {
-    win.innerHTML = "";
-    win.append("Draw!");
+  if (userAnswer === PAPER && computer_choice === PAPER) {
+    win.innerHTML = "Draw!";
     updateComputerScore();
-  } else if (userAnswer === "Paper") {
-    if (computer_choice === "Rock") {
-      win.innerHTML = "";
-      win.append("User Wins!");
+  } else if (userAnswer === PAPER) {
+    if (computer_choice === ROCK) {
+      win.innerHTML = "User Wins!";
       updateUserScore();
     } else {
-      win.innerHTML = "";
-      win.append("Computer Wins!");
+      win.innerHTML = "Computer Wins!";
       updateComputerScore();
     }
   }
 
-  if (userAnswer === "Scissors" && computer_choice === "Scissors") {
-    win.innerHTML = "";
-    win.append("Draw!");
-  } else if (userAnswer === "Scissors") {
-    if (computer_choice === "Paper") {
-      win.innerHTML = "";
-      win.append("User Wins!");
+  if (userAnswer === SCISSORS && computer_choice === SCISSORS) {
+    win.innerHTML = "Draw!";
+  } else if (userAnswer === SCISSORS) {
+    if (computer_choice === PAPER) {
+      win.innerHTML = "User Wins!";
       updateUserScore();
     } else {
-      win.innerHTML = "";
-      win.append("Computer Wins!");
+      win.innerHTML = "Computer Wins!";
       updateComputerScore();
     }
   }

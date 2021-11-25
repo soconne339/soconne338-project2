@@ -1,98 +1,71 @@
 /* CSS Document */
 
-
-body{
-
+body {
   background-color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.container{
-
+.container {
   margin-left: auto;
   margin-right: auto;
   background-color: #215c61;
   width: 80vw;
   height: auto;
-  color:white;
-
+  color: white;
 }
 
-.startbutton{
-
+.startbutton {
   padding: 10px;
   width: 50vw;
   background-color: slategray;
   color: white;
-  
-  margin-left: 20%;
-  
-  
 
+  margin-left: 20%;
 }
 
-.startbutton:hover{
-
+.startbutton:hover {
   cursor: pointer;
   background-color: #49525c;
-
 }
 
-
-.starting_images img{
-
+.starting_images img {
   position: relative;
   left: 40%;
   width: 3rem;
-  
 }
 
-
-
-.hidegame{
-
+.hidegame {
   visibility: hidden;
 }
 
-.showgame{
-
+.showgame {
   visibility: visible;
-  
 }
 
-
-
-.wrapper{
-
+.wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-.intro{
-  
+.intro {
   text-align: center;
   width: 30%;
   margin: 0 auto;
 }
 
-
-
-.scoreboard{
-
-  
+.scoreboard {
   width: 50%;
   margin-bottom: 5rem;
   display: flex;
   margin: 0 auto;
 }
 
-
-
-.userscore, .computerscore{
-
+.userscore,
+.computerscore {
   border: 2px solid black;
   width: 80%;
-  
+
   padding: 2%;
   text-align: center;
   background-color: #cfbfbf;
@@ -100,85 +73,56 @@ body{
   text-transform: uppercase;
   margin: inherit;
   display: flex;
-  
 }
 
-.userscore span, .computerscore span{
-
+.userscore span,
+.computerscore span {
   width: 80%;
 }
-
-
-
-
-
 
 .userselections {
-
-  
   width: 80%;
-  
+
   padding: 2%;
   margin: 0 auto;
-  
-  
+
   display: flex;
 }
 
 .userselections button {
-
   width: inherit;
   height: inherit;
   border: 2px solid black;
   cursor: pointer;
-  
 }
 
 .userselections button:hover {
-
   color: white;
   background-color: slategray;
 }
 
-@media (max-width:600px){
-
-  .userselections button img{
-
+@media (max-width: 600px) {
+  .userselections button img {
     width: 30px;
   }
 }
 
-
-.selections{
-
+.selections {
   display: flex;
   margin: inherit;
   width: 80%;
-  
 }
 
-.game-selection{
-
-  
+.game-selection {
   padding: 5%;
   text-align: center;
   width: 50%;
-  
-
-
-  
-
-
 }
 
-
-.winner{
-
-  
+.winner {
   width: 30%;
   font-size: 150%;
-  
+
   text-align: center;
   margin: inherit;
 }
-
